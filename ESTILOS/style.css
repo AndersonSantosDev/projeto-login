@@ -22,7 +22,7 @@ body, html {
 main {
     position: relative;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
 section#login {
@@ -37,6 +37,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);                         /*SOMBRA NA BORDA*/
+
+    transition: width .3s, height .3s;                                        /*EFEITO PARA TRANSIÇÃO DE TAMANHO DE TELA*/
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -47,7 +50,7 @@ section#login > div#imagem {
     height: 200px;
 }
 
-section > div#formulario {
+section#login > div#formulario {
     display: block;
     padding: 10px;
 }
